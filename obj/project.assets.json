@@ -119,6 +119,7 @@
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "AForge >= 2.2.5",
+      "AForge.Video >= 2.2.5",
       "AForge.Video.DirectShow >= 2.2.5",
       "ZXing.Net >= 0.7.0"
     ]
@@ -168,6 +169,10 @@
         "targetAlias": "net5.0-windows",
         "dependencies": {
           "AForge": {
+            "target": "Package",
+            "version": "[2.2.5, )"
+          },
+          "AForge.Video": {
             "target": "Package",
             "version": "[2.2.5, )"
           },

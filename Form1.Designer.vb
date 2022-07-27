@@ -58,6 +58,7 @@ Partial Class Form1
         Me.btnClearDisplay = New System.Windows.Forms.Button()
         Me.pboxQrDisplay = New System.Windows.Forms.PictureBox()
         Me.btnScan = New System.Windows.Forms.Button()
+        Me.btnDetect = New System.Windows.Forms.Button()
         Me.gbxQuestion1.SuspendLayout()
         CType(Me.pboxQrDisplay, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -412,9 +413,9 @@ Partial Class Form1
         '
         'pboxQrDisplay
         '
-        Me.pboxQrDisplay.Location = New System.Drawing.Point(216, 440)
+        Me.pboxQrDisplay.Location = New System.Drawing.Point(140, 426)
         Me.pboxQrDisplay.Name = "pboxQrDisplay"
-        Me.pboxQrDisplay.Size = New System.Drawing.Size(356, 196)
+        Me.pboxQrDisplay.Size = New System.Drawing.Size(527, 210)
         Me.pboxQrDisplay.TabIndex = 18
         Me.pboxQrDisplay.TabStop = False
         '
@@ -422,12 +423,23 @@ Partial Class Form1
         '
         Me.btnScan.BackColor = System.Drawing.Color.Navy
         Me.btnScan.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnScan.Location = New System.Drawing.Point(311, 648)
+        Me.btnScan.Location = New System.Drawing.Point(238, 660)
         Me.btnScan.Name = "btnScan"
         Me.btnScan.Size = New System.Drawing.Size(125, 55)
-        Me.btnScan.TabIndex = 14
+        Me.btnScan.TabIndex = 19
         Me.btnScan.Text = "Start QR Scan"
         Me.btnScan.UseVisualStyleBackColor = False
+        '
+        'btnDetect
+        '
+        Me.btnDetect.BackColor = System.Drawing.Color.Navy
+        Me.btnDetect.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnDetect.Location = New System.Drawing.Point(434, 660)
+        Me.btnDetect.Name = "btnDetect"
+        Me.btnDetect.Size = New System.Drawing.Size(125, 55)
+        Me.btnDetect.TabIndex = 19
+        Me.btnDetect.Text = "Detect QR"
+        Me.btnDetect.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -435,11 +447,12 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Lavender
         Me.ClientSize = New System.Drawing.Size(1217, 776)
+        Me.Controls.Add(Me.btnDetect)
+        Me.Controls.Add(Me.btnScan)
         Me.Controls.Add(Me.pboxQrDisplay)
         Me.Controls.Add(Me.btnClearDisplay)
         Me.Controls.Add(Me.btnViewDisplay)
         Me.Controls.Add(Me.RboxDisplay)
-        Me.Controls.Add(Me.btnScan)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.lblSubhead)
         Me.Controls.Add(Me.lblAppname)
@@ -515,4 +528,5 @@ Partial Class Form1
     Friend WithEvents btnClearDisplay As Button
     Friend WithEvents pboxQrDisplay As PictureBox
     Friend WithEvents btnScan As Button
+    Friend WithEvents btnDetect As Button
 End Class

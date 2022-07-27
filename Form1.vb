@@ -1,8 +1,12 @@
-﻿
-Imports System.IO
-
+﻿Imports System.IO
+Imports AForge
+Imports AForge.Video
+Imports AForge.Video.DirectShow
+Imports ZXing
 Public Class Form1
-    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click, btnScan.Click
+    Dim MyCam As VideoCaptureDevice
+    Dim infobit As Bitmap
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Using sw As StreamWriter = New StreamWriter(Application.StartupPath & "" + txtbxFname.Text & " " + txtbxLname.Text & ".txt")
             MessageBox.Show(" Record Submitted!")
             Dim datenow = DateTime.Now
@@ -106,5 +110,18 @@ Public Class Form1
 
     Private Sub btnClearDisplay_Click(sender As Object, e As EventArgs) Handles btnClearDisplay.Click
         RboxDisplay.Clear()
+    End Sub
+
+    Private Sub btnScan_Click(sender As Object, e As EventArgs) Handles btnScan.Click
+        Dim ScanQr As VideoCaptureDeviceForm = New VideoCaptureDeviceForm
+        If ScanQr.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            MyCam = ScanQr.VideoDevice
+            AddHandler MyCam.NewFrame, New NewFrameEventHandler(AddressOf OutputPic)
+            MyCam.Start()
+        End If
+    End Sub
+    Private Sub OutputPic(sender As Object, eventArgs As NewFrameEventArgs)
+        infobit = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+        pboxQrDisplay.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
     End Sub
 End Class
