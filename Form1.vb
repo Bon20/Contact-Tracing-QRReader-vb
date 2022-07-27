@@ -149,8 +149,6 @@ Public Class Form1
                     cbxGender.SelectedIndex = "0"
                 End If
 
-
-
                 If QrInfo(6) = "NO" Then
                     cboxFever.SelectedIndex = "0"
                 Else
@@ -187,6 +185,11 @@ Public Class Form1
                     cBoxDiarrhea.SelectedIndex = "1"
                 End If
 
+                If QrInfo(7) = "NO" Then
+                    radbuttonNo.Checked = True
+                Else
+                    radbuttonYes.Checked = True
+                End If
             End If
         End If
     End Sub
