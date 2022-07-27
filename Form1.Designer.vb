@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.txtbxFname = New System.Windows.Forms.TextBox()
         Me.txtbxLname = New System.Windows.Forms.TextBox()
@@ -383,9 +383,9 @@ Partial Class Form1
         '
         'RboxDisplay
         '
-        Me.RboxDisplay.Location = New System.Drawing.Point(823, 55)
+        Me.RboxDisplay.Location = New System.Drawing.Point(1030, 29)
         Me.RboxDisplay.Name = "RboxDisplay"
-        Me.RboxDisplay.Size = New System.Drawing.Size(344, 548)
+        Me.RboxDisplay.Size = New System.Drawing.Size(344, 238)
         Me.RboxDisplay.TabIndex = 16
         Me.RboxDisplay.Text = ""
         '
@@ -393,7 +393,7 @@ Partial Class Form1
         '
         Me.btnViewDisplay.BackColor = System.Drawing.Color.Navy
         Me.btnViewDisplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnViewDisplay.Location = New System.Drawing.Point(823, 651)
+        Me.btnViewDisplay.Location = New System.Drawing.Point(1049, 311)
         Me.btnViewDisplay.Name = "btnViewDisplay"
         Me.btnViewDisplay.Size = New System.Drawing.Size(137, 49)
         Me.btnViewDisplay.TabIndex = 17
@@ -404,7 +404,7 @@ Partial Class Form1
         '
         Me.btnClearDisplay.BackColor = System.Drawing.Color.Navy
         Me.btnClearDisplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClearDisplay.Location = New System.Drawing.Point(1014, 651)
+        Me.btnClearDisplay.Location = New System.Drawing.Point(1237, 311)
         Me.btnClearDisplay.Name = "btnClearDisplay"
         Me.btnClearDisplay.Size = New System.Drawing.Size(137, 49)
         Me.btnClearDisplay.TabIndex = 17
@@ -413,9 +413,9 @@ Partial Class Form1
         '
         'pboxQrDisplay
         '
-        Me.pboxQrDisplay.Location = New System.Drawing.Point(140, 426)
+        Me.pboxQrDisplay.Location = New System.Drawing.Point(365, 410)
         Me.pboxQrDisplay.Name = "pboxQrDisplay"
-        Me.pboxQrDisplay.Size = New System.Drawing.Size(527, 210)
+        Me.pboxQrDisplay.Size = New System.Drawing.Size(387, 336)
         Me.pboxQrDisplay.TabIndex = 18
         Me.pboxQrDisplay.TabStop = False
         '
@@ -423,7 +423,7 @@ Partial Class Form1
         '
         Me.btnScan.BackColor = System.Drawing.Color.Navy
         Me.btnScan.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnScan.Location = New System.Drawing.Point(238, 660)
+        Me.btnScan.Location = New System.Drawing.Point(787, 610)
         Me.btnScan.Name = "btnScan"
         Me.btnScan.Size = New System.Drawing.Size(125, 55)
         Me.btnScan.TabIndex = 19
@@ -434,7 +434,7 @@ Partial Class Form1
         '
         Me.btnDetect.BackColor = System.Drawing.Color.Navy
         Me.btnDetect.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnDetect.Location = New System.Drawing.Point(434, 660)
+        Me.btnDetect.Location = New System.Drawing.Point(787, 549)
         Me.btnDetect.Name = "btnDetect"
         Me.btnDetect.Size = New System.Drawing.Size(125, 55)
         Me.btnDetect.TabIndex = 19
@@ -446,7 +446,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Lavender
-        Me.ClientSize = New System.Drawing.Size(1217, 776)
+        Me.ClientSize = New System.Drawing.Size(1400, 776)
         Me.Controls.Add(Me.btnDetect)
         Me.Controls.Add(Me.btnScan)
         Me.Controls.Add(Me.pboxQrDisplay)
@@ -483,6 +483,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtbxLname)
         Me.Controls.Add(Me.txtbxFname)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Contact Tracing App"
         Me.gbxQuestion1.ResumeLayout(False)
         Me.gbxQuestion1.PerformLayout()

@@ -118,10 +118,29 @@ Public Class Form1
             MyCam = ScanQr.VideoDevice
             AddHandler MyCam.NewFrame, New NewFrameEventHandler(AddressOf OutputPic)
             MyCam.Start()
+            DetectQR()
         End If
     End Sub
     Private Sub OutputPic(sender As Object, eventArgs As NewFrameEventArgs)
-        infobit = DirectCast(eventArgs.Frame.Clone(), Bitmap)
-        pboxQrDisplay.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+        infobit = CType(eventArgs.Frame.Clone(), Bitmap)
+        pboxQrDisplay.Image = CType(eventArgs.Frame.Clone(), Bitmap)
     End Sub
+
+    Private Sub btnDetect_Click(sender As Object, e As EventArgs) Handles btnDetect.Click
+        DetectQR()
+    End Sub
+    Public Sub DetectQR()
+        If pboxQrDisplay.Image IsNot Nothing Then
+            Dim QrImage As BarcodeReader = New BarcodeReader()
+            Dim QROutput As Result = QrImage.Decode(CType(pboxQrDisplay.Image, Bitmap))
+            If QROutput IsNot Nothing Then
+                MsgBox("Detected")
+                txtbxFname.Text = QROutput.ToString()
+
+
+            End If
+        End If
+    End Sub
+
+
 End Class
