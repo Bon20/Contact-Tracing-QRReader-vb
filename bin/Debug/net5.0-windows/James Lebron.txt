@@ -1,0 +1,19 @@
+Thursday, 28 July 2022
+4:05 am
+
+FIRST NAME: James
+LAST NAME: Lebron
+CONTACT NUMBER: 09752281723
+AGE: 40
+GENDER: MALE
+ADDRESS: Manila
+
+Have you been sick of any of the following in the last 14 days:
+FEVER: YES
+COUGH: NO
+COLDS: YES
+SORE THROAT: NO
+DIFFICULTY IN BREATHING: YES
+DIARRHEA: NO
+
+Have you had encounter with COVID-19 positive :YES

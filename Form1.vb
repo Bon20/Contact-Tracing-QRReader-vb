@@ -144,45 +144,45 @@ Public Class Form1
                 txtbxAddress.Text = QrInfo(5)
 
                 If QrInfo(4) = "NO" Then
-                    cbxGender.SelectedIndex = "1"
+                    cbxGender.Text = "FEMALE"
                 Else
-                    cbxGender.SelectedIndex = "0"
+                    cbxGender.Text = "MALE"
                 End If
 
                 If QrInfo(6) = "NO" Then
-                    cboxFever.SelectedIndex = "0"
+                    cboxFever.Text = "NO"
                 Else
-                    cboxFever.SelectedIndex = "1"
+                    cboxFever.Text = "YES"
                 End If
 
                 If QrInfo(8) = "NO" Then
-                    cboxCough.SelectedIndex = "0"
+                    cboxCough.Text = "NO"
                 Else
-                    cboxCough.SelectedIndex = "1"
+                    cboxCough.SelectedIndex = "YES"
                 End If
 
                 If QrInfo(9) = "NO" Then
-                    cboxColds.SelectedIndex = "0"
+                    cboxColds.Text = "NO"
                 Else
-                    cboxColds.SelectedIndex = "1"
+                    cboxColds.Text = "YES"
                 End If
 
                 If QrInfo(10) = "NO" Then
-                    cboxSorethroat.SelectedIndex = "0"
+                    cboxSorethroat.Text = "NO"
                 Else
-                    cboxSorethroat.SelectedIndex = "1"
+                    cboxSorethroat.Text = "YES"
                 End If
 
                 If QrInfo(11) = "NO" Then
-                    cboxDiffInBreath.SelectedIndex = "0"
+                    cboxDiffInBreath.Text = "NO"
                 Else
-                    cboxDiffInBreath.SelectedIndex = "1"
+                    cboxDiffInBreath.Text = "YES"
                 End If
 
                 If QrInfo(12) = "NO" Then
-                    cBoxDiarrhea.SelectedIndex = "0"
+                    cBoxDiarrhea.Text = "NO"
                 Else
-                    cBoxDiarrhea.SelectedIndex = "1"
+                    cBoxDiarrhea.Text = "YES"
                 End If
 
                 If QrInfo(7) = "NO" Then
