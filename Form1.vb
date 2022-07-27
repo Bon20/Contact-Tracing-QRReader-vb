@@ -141,11 +141,52 @@ Public Class Form1
                 txtbxLname.Text = QrInfo(1)
                 txtbxCnumber.Text = QrInfo(2)
                 txtbxAge.Text = QrInfo(3)
+                txtbxAddress.Text = QrInfo(5)
+
                 If QrInfo(4) = "NO" Then
                     cbxGender.SelectedIndex = "1"
                 Else
                     cbxGender.SelectedIndex = "0"
                 End If
+
+
+
+                If QrInfo(6) = "NO" Then
+                    cboxFever.SelectedIndex = "0"
+                Else
+                    cboxFever.SelectedIndex = "1"
+                End If
+
+                If QrInfo(8) = "NO" Then
+                    cboxCough.SelectedIndex = "0"
+                Else
+                    cboxCough.SelectedIndex = "1"
+                End If
+
+                If QrInfo(9) = "NO" Then
+                    cboxColds.SelectedIndex = "0"
+                Else
+                    cboxColds.SelectedIndex = "1"
+                End If
+
+                If QrInfo(10) = "NO" Then
+                    cboxSorethroat.SelectedIndex = "0"
+                Else
+                    cboxSorethroat.SelectedIndex = "1"
+                End If
+
+                If QrInfo(11) = "NO" Then
+                    cboxDiffInBreath.SelectedIndex = "0"
+                Else
+                    cboxDiffInBreath.SelectedIndex = "1"
+                End If
+
+                If QrInfo(12) = "NO" Then
+                    cBoxDiarrhea.SelectedIndex = "0"
+                Else
+                    cBoxDiarrhea.SelectedIndex = "1"
+                End If
+
             End If
         End If
     End Sub
