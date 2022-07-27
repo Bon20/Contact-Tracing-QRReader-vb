@@ -66,45 +66,49 @@ Partial Class Form1
         'txtbxFname
         '
         Me.txtbxFname.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.txtbxFname.Location = New System.Drawing.Point(162, 58)
+        Me.txtbxFname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtbxFname.Location = New System.Drawing.Point(166, 59)
         Me.txtbxFname.Name = "txtbxFname"
         Me.txtbxFname.Size = New System.Drawing.Size(164, 27)
         Me.txtbxFname.TabIndex = 0
         '
         'txtbxLname
         '
-        Me.txtbxLname.Location = New System.Drawing.Point(162, 91)
+        Me.txtbxLname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtbxLname.Location = New System.Drawing.Point(166, 92)
         Me.txtbxLname.Name = "txtbxLname"
         Me.txtbxLname.Size = New System.Drawing.Size(164, 27)
         Me.txtbxLname.TabIndex = 1
         '
         'txtbxCnumber
         '
-        Me.txtbxCnumber.Location = New System.Drawing.Point(162, 124)
+        Me.txtbxCnumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtbxCnumber.Location = New System.Drawing.Point(166, 125)
         Me.txtbxCnumber.Name = "txtbxCnumber"
         Me.txtbxCnumber.Size = New System.Drawing.Size(164, 27)
         Me.txtbxCnumber.TabIndex = 2
         '
         'txtbxAge
         '
-        Me.txtbxAge.Location = New System.Drawing.Point(162, 157)
+        Me.txtbxAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtbxAge.Location = New System.Drawing.Point(166, 158)
         Me.txtbxAge.Name = "txtbxAge"
         Me.txtbxAge.Size = New System.Drawing.Size(48, 27)
         Me.txtbxAge.TabIndex = 3
         '
         'cbxGender
         '
-        Me.cbxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbxGender.FormattingEnabled = True
         Me.cbxGender.Items.AddRange(New Object() {"MALE", "FEMALE"})
-        Me.cbxGender.Location = New System.Drawing.Point(161, 190)
+        Me.cbxGender.Location = New System.Drawing.Point(165, 191)
         Me.cbxGender.Name = "cbxGender"
         Me.cbxGender.Size = New System.Drawing.Size(164, 28)
         Me.cbxGender.TabIndex = 4
         '
         'txtbxAddress
         '
-        Me.txtbxAddress.Location = New System.Drawing.Point(161, 227)
+        Me.txtbxAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtbxAddress.Location = New System.Drawing.Point(165, 228)
         Me.txtbxAddress.Multiline = True
         Me.txtbxAddress.Name = "txtbxAddress"
         Me.txtbxAddress.Size = New System.Drawing.Size(159, 82)
@@ -224,60 +228,54 @@ Partial Class Form1
         '
         'cboxFever
         '
-        Me.cboxFever.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxFever.FormattingEnabled = True
         Me.cboxFever.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cboxFever.Location = New System.Drawing.Point(567, 103)
+        Me.cboxFever.Location = New System.Drawing.Point(577, 103)
         Me.cboxFever.Name = "cboxFever"
         Me.cboxFever.Size = New System.Drawing.Size(130, 28)
         Me.cboxFever.TabIndex = 6
         '
         'cboxCough
         '
-        Me.cboxCough.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxCough.FormattingEnabled = True
         Me.cboxCough.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cboxCough.Location = New System.Drawing.Point(567, 137)
+        Me.cboxCough.Location = New System.Drawing.Point(577, 137)
         Me.cboxCough.Name = "cboxCough"
         Me.cboxCough.Size = New System.Drawing.Size(130, 28)
         Me.cboxCough.TabIndex = 7
         '
         'cboxColds
         '
-        Me.cboxColds.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxColds.FormattingEnabled = True
         Me.cboxColds.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cboxColds.Location = New System.Drawing.Point(567, 171)
+        Me.cboxColds.Location = New System.Drawing.Point(577, 171)
         Me.cboxColds.Name = "cboxColds"
         Me.cboxColds.Size = New System.Drawing.Size(130, 28)
         Me.cboxColds.TabIndex = 8
         '
         'cboxSorethroat
         '
-        Me.cboxSorethroat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxSorethroat.FormattingEnabled = True
         Me.cboxSorethroat.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cboxSorethroat.Location = New System.Drawing.Point(567, 205)
+        Me.cboxSorethroat.Location = New System.Drawing.Point(577, 205)
         Me.cboxSorethroat.Name = "cboxSorethroat"
         Me.cboxSorethroat.Size = New System.Drawing.Size(130, 28)
         Me.cboxSorethroat.TabIndex = 9
         '
         'cboxDiffInBreath
         '
-        Me.cboxDiffInBreath.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxDiffInBreath.FormattingEnabled = True
         Me.cboxDiffInBreath.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cboxDiffInBreath.Location = New System.Drawing.Point(567, 239)
+        Me.cboxDiffInBreath.Location = New System.Drawing.Point(577, 239)
         Me.cboxDiffInBreath.Name = "cboxDiffInBreath"
         Me.cboxDiffInBreath.Size = New System.Drawing.Size(130, 28)
         Me.cboxDiffInBreath.TabIndex = 10
         '
         'cBoxDiarrhea
         '
-        Me.cBoxDiarrhea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cBoxDiarrhea.FormattingEnabled = True
         Me.cBoxDiarrhea.Items.AddRange(New Object() {"YES", "NO"})
-        Me.cBoxDiarrhea.Location = New System.Drawing.Point(567, 273)
+        Me.cBoxDiarrhea.Location = New System.Drawing.Point(577, 273)
         Me.cBoxDiarrhea.Name = "cBoxDiarrhea"
         Me.cBoxDiarrhea.Size = New System.Drawing.Size(130, 28)
         Me.cBoxDiarrhea.TabIndex = 11
@@ -383,9 +381,10 @@ Partial Class Form1
         '
         'RboxDisplay
         '
-        Me.RboxDisplay.Location = New System.Drawing.Point(1030, 29)
+        Me.RboxDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.RboxDisplay.Location = New System.Drawing.Point(815, 24)
         Me.RboxDisplay.Name = "RboxDisplay"
-        Me.RboxDisplay.Size = New System.Drawing.Size(344, 238)
+        Me.RboxDisplay.Size = New System.Drawing.Size(344, 489)
         Me.RboxDisplay.TabIndex = 16
         Me.RboxDisplay.Text = ""
         '
@@ -393,7 +392,7 @@ Partial Class Form1
         '
         Me.btnViewDisplay.BackColor = System.Drawing.Color.Navy
         Me.btnViewDisplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnViewDisplay.Location = New System.Drawing.Point(1049, 311)
+        Me.btnViewDisplay.Location = New System.Drawing.Point(840, 550)
         Me.btnViewDisplay.Name = "btnViewDisplay"
         Me.btnViewDisplay.Size = New System.Drawing.Size(137, 49)
         Me.btnViewDisplay.TabIndex = 17
@@ -404,7 +403,7 @@ Partial Class Form1
         '
         Me.btnClearDisplay.BackColor = System.Drawing.Color.Navy
         Me.btnClearDisplay.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnClearDisplay.Location = New System.Drawing.Point(1237, 311)
+        Me.btnClearDisplay.Location = New System.Drawing.Point(997, 550)
         Me.btnClearDisplay.Name = "btnClearDisplay"
         Me.btnClearDisplay.Size = New System.Drawing.Size(137, 49)
         Me.btnClearDisplay.TabIndex = 17
@@ -413,7 +412,8 @@ Partial Class Form1
         '
         'pboxQrDisplay
         '
-        Me.pboxQrDisplay.Location = New System.Drawing.Point(365, 410)
+        Me.pboxQrDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pboxQrDisplay.Location = New System.Drawing.Point(33, 426)
         Me.pboxQrDisplay.Name = "pboxQrDisplay"
         Me.pboxQrDisplay.Size = New System.Drawing.Size(387, 336)
         Me.pboxQrDisplay.TabIndex = 18
@@ -423,7 +423,7 @@ Partial Class Form1
         '
         Me.btnScan.BackColor = System.Drawing.Color.Navy
         Me.btnScan.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnScan.Location = New System.Drawing.Point(787, 610)
+        Me.btnScan.Location = New System.Drawing.Point(447, 503)
         Me.btnScan.Name = "btnScan"
         Me.btnScan.Size = New System.Drawing.Size(125, 55)
         Me.btnScan.TabIndex = 19
@@ -434,7 +434,7 @@ Partial Class Form1
         '
         Me.btnDetect.BackColor = System.Drawing.Color.Navy
         Me.btnDetect.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnDetect.Location = New System.Drawing.Point(787, 549)
+        Me.btnDetect.Location = New System.Drawing.Point(446, 610)
         Me.btnDetect.Name = "btnDetect"
         Me.btnDetect.Size = New System.Drawing.Size(125, 55)
         Me.btnDetect.TabIndex = 19
@@ -446,7 +446,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Lavender
-        Me.ClientSize = New System.Drawing.Size(1400, 776)
+        Me.ClientSize = New System.Drawing.Size(1193, 776)
         Me.Controls.Add(Me.btnDetect)
         Me.Controls.Add(Me.btnScan)
         Me.Controls.Add(Me.pboxQrDisplay)
@@ -482,6 +482,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtbxCnumber)
         Me.Controls.Add(Me.txtbxLname)
         Me.Controls.Add(Me.txtbxFname)
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Contact Tracing App"

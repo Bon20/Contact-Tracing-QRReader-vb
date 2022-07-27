@@ -134,25 +134,19 @@ Public Class Form1
             Dim QrImage As BarcodeReader = New BarcodeReader()
             Dim QROutput As Result = QrImage.Decode(CType(pboxQrDisplay.Image, Bitmap))
             If QROutput IsNot Nothing Then
-                MsgBox("Detected")
+                MsgBox(" QR Detected")
                 Dim QRdetails As String = QROutput.ToString()
                 Dim QrInfo As String() = QRdetails.Split(",".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
                 txtbxFname.Text = QrInfo(0)
                 txtbxLname.Text = QrInfo(1)
                 txtbxCnumber.Text = QrInfo(2)
                 txtbxAge.Text = QrInfo(3)
-                cbxGender.Text = QrInfo(4)
-                txtbxAddress.Text = QrInfo(5)
-                gbxQuestion1.Text = QrInfo(6)
-                cboxFever.Text = QrInfo(7)
-                cboxCough.Text = QrInfo(8)
-                cboxColds.Text = QrInfo(9)
-                cboxSorethroat.Text = QrInfo(10)
-                cboxDiffInBreath.Text = QrInfo(11)
-                cBoxDiarrhea.Text = QrInfo(12)
+                If QrInfo(4) = "NO" Then
+                    cbxGender.SelectedIndex = "1"
+                Else
+                    cbxGender.SelectedIndex = "0"
+                End If
             End If
         End If
     End Sub
-
-
 End Class
